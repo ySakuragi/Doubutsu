@@ -2,6 +2,16 @@ class Board {
   BaseArea bArea;
   InfoArea iArea;
   MochigomaArea[] mArea = new MochigomaArea[2];
+  
+   void select(int x, int y){
+    AbstractKoma koma = komaList.getSelectedKoma();
+    if(koma==null){
+      komaList.select(x,y);
+    }else{
+      koma.kStat.selected=false;
+    }
+  }
+
 
   Board(){
     bArea = new BaseArea(1,0,4,3);
