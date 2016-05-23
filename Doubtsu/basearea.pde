@@ -1,5 +1,4 @@
 
-
 class BaseArea extends AbstractArea {
 
   BaseArea(int posX, int posY, int yoko, int tate) {
